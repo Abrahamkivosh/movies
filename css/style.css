@@ -1,0 +1,396 @@
+/* Style the navigation bar */
+
+body {
+    background-color: rgba(51, 41, 35, 0.918);
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* 
+#wrapper {
+    background-color: rgba(51, 41, 35, 0.918);
+    width: 100%;
+    height: auto;
+} */
+
+.navbar {
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    overflow: auto;
+}
+
+
+/* Navbar links */
+
+.navbar a {
+    align-items: center;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbarlink {
+    margin-left: 300px;
+}
+
+
+/* Navbar links on mouse-over */
+
+.navbar a:hover {
+    background-color: #000;
+    border-top: 2px solid yellow;
+}
+
+
+/* Current/active navbar link */
+
+.active {
+    background-color: rgb(60, 61, 46);
+}
+
+#itemsmore {
+    float: left;
+    right: 400px;
+    padding-left: 100px;
+}
+
+#itemsmore a {
+    color: yellow;
+}
+
+#logo {
+    width: 150px;
+    height: 30px;
+    left: 100px;
+}
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+
+@media screen and (max-width: 700px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.spotlight {
+    margin-left: 400px;
+    margin-top: 100px;
+    text-align: justify;
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.category {
+    margin-left: 400px;
+    display: inline;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.category a {
+    color: rgb(192, 197, 223);
+    border-left: 2px solid yellow;
+    margin-left: 50px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.category a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.divider {
+    margin: 2px 100px 10px 300px;
+    align-self: center;
+    border-bottom: 2px solid yellow;
+}
+
+
+/* #wrapper1 {
+    margin-top: 100px;
+} */
+
+.displayMovies {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+    /* margin-bottom: 60px; */
+}
+
+.card {
+    width: 20%;
+    /* margin-right: 40px; */
+    height: auto;
+    float: left;
+}
+
+.card-img-top {
+    cursor: pointer;
+}
+
+.card-body {
+    align-content: center;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.movie-name {
+    color: white;
+    font-family: serif;
+    font-size: 17px;
+}
+
+.card-text {
+    color: rgb(72, 163, 50);
+    font-family: monospace;
+}
+
+.movie-type {
+    padding-left: 400px;
+}
+
+.cartimg {
+    background-color: yellow;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: static;
+}
+
+#witcher1 {
+    background-image: url('../task/assets/assassins_creed_arm_hands_bracelets_character_desmond_miles_19690_1920x1080.jpg');
+    width: 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#witcher2 {
+    background-image: url('../task/assets/img-3-1024x541.jpg');
+    width: 50%;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    margin-top: 100px;
+    color: white;
+    font-weight: 600;
+    align-content: center;
+    text-align: center;
+}
+
+.card-cart {
+    display: flex;
+    float: left;
+    left: 600px;
+    position: absolute;
+}
+
+.card-body-cart {
+    padding-left: 90px;
+    padding-right: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.prevMovie,
+.nextMovie {
+    cursor: pointer;
+    position: absolute;
+    /* top: 50%; */
+    width: auto;
+    margin-top: 22px;
+    background-color: rgb(19, 18, 18);
+    opacity: 0.6;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+
+.addToCart {
+    background-color: orange;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: monospace;
+    height: 40px;
+    width: 150px;
+    color: white;
+}
+
+.addToCart span {
+    border-left: 1px solid white;
+    padding-right: 10px;
+}
+
+#scroll-to-top {
+    float: right;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+}
+
+.dmtop.show {
+    background-color: orange;
+    align-content: center;
+}
+
+.table-cart{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: center;
+    color: blanchedalmond;
+    margin: 20px 60px 10px 500px;
+    border: 2px solid black;
+}
+
+.continueShopping{
+    width: auto;
+    height: auto;
+    background-color: blue;
+    color: chartreuse;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+}
